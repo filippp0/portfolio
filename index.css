@@ -1,0 +1,212 @@
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(220, 220, 221);
+  width: 100%;
+  height: 100%;
+}
+
+.page__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+
+}
+
+.link {
+  text-decoration: none;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__avatar {
+  width: 250px;
+  height: 250px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.header__title {
+  font-size: 50px;
+  line-height: 1.21;
+  align-self: center;
+}
+
+.header__description {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.21;
+  font-weight: 700;
+}
+
+.header__description:last-of-type {
+  margin-top: 0;
+  font-size: 25px;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+.gallery_description {
+  align-self: center;
+  border-bottom: 1px dashed black;
+}
+
+.gallery__lists {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 600px);
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery__lists {
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+}
+
+.gallery__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin-bottom: 10px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.gallery__list::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, .2);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery__list {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+.gallery__about {
+  text-align: center;
+  max-width: 500px;
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery__about {
+    width: 200px;
+  }
+}
+
+.gallery__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid grey;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.galery__link {
+  display: block;
+  margin: 0 auto;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid grey;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.21;
+  z-index: 1;
+}
+
+.gallery__list_type_learn {
+  background-image: url(./images/how-to-learn.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery__list_type_green {
+  background-image: url(./images/green.png);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery__list_type_accros {
+  background-image: url(./images/across-russia.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery__list_type_mesto-pr {
+  background-image: url(./images/mesto-procedure.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery__list_type_mesto-oop {
+  background-image: url(./images/mesto-oop.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery__list_type_mesto-server {
+  background-image: url(./images/mesto-server.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery__list_type_ryba {
+  background-image: url(./images/ryba.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery__list_type_diplom {
+  background-image: url(./images/diplom.png);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__list {
+  list-style: none;
+}
